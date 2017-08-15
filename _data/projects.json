@@ -1,29 +1,29 @@
 [
 	{
-		"name": "Cool project 1",
-		"image": "placeholder.jpg",
+		"name": "Prom Poster",
+		"image": "prom_poster_c.jpg",
 		"url": "#",
-		"date": "Jan 2014",
+		"date": "May 2012",
 		"tags": ["Angular JS","API"]
 	},
 	{
-		"name": "Cool project 2",
-		"image": "placeholder.jpg",
+		"name": "Recruitment Poster",
+		"image": "recruit_poster.jpg",
 		"url": "#",
-		"date": "May 2014",
+		"date": "Aug 2012",
 		"tags": ["Android","PHP"]
 	},
 	{
-		"name": "Cool project 3",
-		"image": "placeholder.jpg",
+		"name": "New Year Party Poster",
+		"image": "new_year_party_poster.jpg",
 		"url": "#",
-		"date": "June 2014",
+		"date": "Dec 2012",
 		"tags": ["HTML","JQuery","PHP"]
 	},
 	{
-		"name": "Cool project 4",
-		"image": "placeholder.jpg",
-		"date": "Oct 2016",
+		"name": "Summer Practice Icon",
+		"image": "practice_icon.jpg",
+		"date": "June 2012",
 		"tags": ["Android","nodejs"]
 	}
 
