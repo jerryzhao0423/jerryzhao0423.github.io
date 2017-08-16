@@ -10,7 +10,6 @@ I was born in Harbin, a beatiful city of northeastern China. I spent my high sch
 
 I love music. I used to play electric keyboard and learned a little guitar and ukulele. I love sports. I a good swimmer and a not so good basketball player.
 
-Contact.
-Zhejian Zhao/Jerry.
-1802-15 Tangreen Crt, Toronto, M2M 3Z2.
+Contact:
+Zhejian Zhao
 cupidzhaozhejian@gmail.com

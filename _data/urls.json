@@ -13,6 +13,11 @@
   {
     "text": "Projects",
     "url": "/projects",
+    "icon": "fa-desktop"
+  },
+  {
+    "text": "PS Gallery",
+    "url": "/psgallery",
     "icon": "fa-photo"
   },
   {
