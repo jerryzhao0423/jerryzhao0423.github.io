@@ -10,6 +10,4 @@ I was born in Harbin, a beatiful city of northeastern China. I spent my high sch
 
 I love music. I used to play electric keyboard and learned a little guitar and ukulele. I love sports. I a good swimmer and a not so good basketball player.
 
-Contact:
-Zhejian Zhao
-cupidzhaozhejian@gmail.com
+Email: cupidzhaozhejian@gmail.com

@@ -167,8 +167,9 @@ footer {
     padding-top: 10px;
     color: #444444;
     font-size: 11px;
-    bottom: 0;
+    bottom: 0px;
     padding-bottom: 10px;
+    position: fixed;
 }
 .pager li.active a {
     background: rgba(89, 148, 129, 0.3);
