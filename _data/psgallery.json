@@ -2,7 +2,7 @@
 	{
 		"name": "Prom Poster",
 		"image": "prom_poster_c.jpg",
-		"url": "/static/psgallery/prom_poster_c",
+		"url": "#",
 		"date": "May 2012",
 	},
 	{
@@ -20,7 +20,7 @@
 	{
 		"name": "Summer Practice Icon",
 		"image": "practice_icon.jpg",
-		"url":"#",
+		"url": "#",
 		"date": "June 2012",
 	}
 
