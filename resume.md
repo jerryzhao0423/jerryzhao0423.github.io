@@ -6,9 +6,7 @@ permalink: /resume/
 
 <p>
 	<a href="/static/Resume.pdf" class="botton">
-		<i class="fa-fa-download">
-			::before
-		</i>
-		"My Resume"
+		
+		My Resume
 	</a>
 </p>
