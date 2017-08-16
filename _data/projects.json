@@ -1,28 +1,29 @@
 [
 	{
 		"name": "Analysis of ubiquitous caching for adaptive video streaming over named data network",
-		"image": "prom_poster_c.jpg",
+		"image": "#",
 		"url": "#",
 		"date": "May 2016",
 		"tags": ["C++","MATLAB"]
 	},
 	{
 		"name": "A 12 bit 100MS/s sample and hold circuit for pipeline ADC",
-		"image": "recruit_poster.jpg",
+		"image": "#",
 		"url": "#",
 		"date": "Oct 2016",
 		"tags": ["Cadence","MATLAB"]
 	},
 	{
 		"name": "An intelligent vehicle based on FPGA",
-		"image": "new_year_party_poster.jpg",
+		"image": "intelligent_vehicle.jpg",
 		"url": "#",
 		"date": "Sep 2014",
 		"tags": ["VHDL"]
 	},
 	{
 		"name": "A model to choose the best college coaches of all time",
-		"image": "practice_icon.jpg",
+		"image": "#",
+		"url": "#",
 		"date": "Jan 2014",
 		"tags": ["Python","MATLAB"]
 	}
