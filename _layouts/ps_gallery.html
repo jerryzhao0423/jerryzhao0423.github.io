@@ -12,18 +12,18 @@ layout: default
     	<div class="well project-outer">
     		<div class="project-inner">
     			<a href="/static/psgallery/{{ i.image }}" class="thickbox">
-    			<div class="project-img bordered" style="background-image: url('/static/psgallery/{{ i.image }}');"></div>
+    			<div class="psgallery-img bordered" style="background-image: url('/static/psgallery/{{ i.image }}');"></div>
                 </a>
                 {% if i.url %} <a href="{{ i.url }}"> {% endif %}
-    			<h3 class="project-headlines">{{ i.name }}</h3>
+    			<h3 class="psgallery-headlines">{{ i.name }}</h3>
     			{% if i.url %} </a> {% endif %}
-    			<div class="project-content">
+    			<div class="psgallery-content">
     			</div>
-    			<div class="project-footer"> 
+    			<div class="psgallery-footer"> 
     				{% if i.url %} 
-    				<a href="{{ i.url }}" class="btn btn-info btn-raised btn-sm project-link">View</a>
+    				<a href="{{ i.url }}" class="btn btn-info btn-raised btn-sm psgallery-link">View</a>
     				{% endif %}
-    				<span class="project-timeline">{{ i.date }}</span>
+    				<span class="psgallery-timeline">{{ i.date }}</span>
     			</div>
     		</div>
     	</div>
