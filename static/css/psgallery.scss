@@ -26,13 +26,13 @@ $text_size: 13px;
  * Project Block
  * //////////////////////////////////
  */
-.project-item.not-show{ display: none; }
+.psgallery-item.not-show{ display: none; }
 
-.project-outer {
+.psgallery-outer {
 
     vertical-align: top;
 
-    .project-headlines {
+    .psgallery-headlines {
 
         @include margins(5px 0);
         @include borderbtm( #EEE );
@@ -40,9 +40,9 @@ $text_size: 13px;
 
     }
 
-    .project-inner > a { display: block; }
+    .psgallery-inner > a { display: block; }
 
-    .project-img {
+    .psgallery-img {
         height: 200px;
         display: block;
         @include bg( cover );
@@ -57,19 +57,19 @@ $text_size: 13px;
         &:first-child, &:last-child { margin-left: 0; }
     }
 
-    .project-footer {
+    .psgallery-footer {
 
         clear: both;
         display: inline-block;
         width: 100%;
 
-        .project-link {
+        .psgallery-link {
             display: inline-block;
             position: relative;
             float: left;
         }
 
-        .project-timeline {
+        .psgallery-timeline {
 
             display: inline-block;
             position: relative;
