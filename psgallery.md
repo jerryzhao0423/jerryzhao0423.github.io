@@ -1,5 +1,5 @@
 ---
-layout: ps_gallery
+layout: psgallery
 title: PS Gallery
 permalink: /psgallery/
 ---
