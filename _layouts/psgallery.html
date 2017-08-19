@@ -6,13 +6,13 @@ layout: default
   <div class="post-content">
     {{ content }}
 
-    <div class="psgallery row">
-    {% for i in site.data.psgallery %}
+    <div class="psgallerys row">
+    {% for i in site.data.psgallerys %}
     <div class="psgallery-item col-md-4 col-sm-6 col-xs-12">
     	<div class="well psgallery-outer">
     		<div class="psgallery-inner">
-    			<a href="/static/psgallery/{{ i.image }}" class="thickbox">
-    			<div class="psgallery-img bordered" style="background-image: url('/static/psgallery/{{ i.image }}');"></div>
+    			<a href="/static/psgallerys/{{ i.image }}" class="thickbox">
+    			<div class="psgallery-img bordered" style="background-image: url('/static/psgallerys/{{ i.image }}');"></div>
                 </a>
                 {% if i.url %} <a href="{{ i.url }}"> {% endif %}
     			<h3 class="psgallery-headlines">{{ i.name }}</h3>

@@ -37,7 +37,7 @@ layout: null
         {% endfor %}
       </item>
     {% endfor %}
-    {% for psgallery in site.data.psgallery %}
+    {% for psgallery in site.data.psgallerys %}
       <item>
         <title>{{ psgallery.name | xml_escape }}</title>
         <description>{{ psgallery.name | xml_escape }}</description>
