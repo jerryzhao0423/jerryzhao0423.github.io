@@ -8,8 +8,8 @@
 	},
 	{
 		"name": "A 12 bit 100MS/s sample and hold circuit for pipeline ADC",
-		"image": "#",
-		"url": "#",
+		"image": "pipeline.gif",
+		"url": "http://jerryzhao0423.github.io/static/projects/sh_circuit.pdf",
 		"date": "Oct 2016",
 		"tags": ["Cadence","MATLAB"]
 	},
