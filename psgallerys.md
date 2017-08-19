@@ -1,7 +1,7 @@
 ---
-layout: psgallerys
+layout: psgallery
 title: PS Gallery
-permalink: /psgallerys/
+permalink: /psgallery/
 ---
 
 Few of my Photoshop works.
