@@ -26,7 +26,6 @@ $text_size: 13px;
  * Project Block
  * //////////////////////////////////
  */
-.psgallery-item.not-show{ display: none; }
 
 .psgallery-outer {
 
@@ -46,15 +45,6 @@ $text_size: 13px;
         height: 200px;
         display: block;
         @include bg( cover );
-    }
-
-    span.tags {
-
-        @include borderbtm( #888 );
-        @include margins(0 5px);
-        font-size: ($heading_size / 2);
-
-        &:first-child, &:last-child { margin-left: 0; }
     }
 
     .psgallery-footer {

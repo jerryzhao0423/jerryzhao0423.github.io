@@ -37,5 +37,13 @@ layout: null
         {% endfor %}
       </item>
     {% endfor %}
+    {% for psgallery in site.data.psgallery %}
+      <item>
+        <title>{{ psgallery.name | xml_escape }}</title>
+        <description>{{ psgallery.name | xml_escape }}</description>
+        <link>{{ psgallery.url | prepend: site.url }}</link>
+        <pubDate>{{ psgallery.date | date_to_rfc822 }}</pubDate>
+      </item>
+    {% endfor %}
   </channel>
 </rss>
