@@ -22,7 +22,7 @@
 	},
 	{
 		"name": "A model to choose the best college coaches of all time",
-		"image": "NCAA_logo.jpg",
+		"image": "NCAA_logo.png",
 		"url": "http://jerryzhao0423.github.io/static/projects/best_coach.pdf",
 		"date": "Jan 2014",
 		"tags": ["Python","MATLAB"]
