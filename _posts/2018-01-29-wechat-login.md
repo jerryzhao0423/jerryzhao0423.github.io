@@ -24,5 +24,52 @@ categories: others
 </ul>
 
 <p>&nbsp;&nbsp;Here is the tiem sequence diagram</p>
-<img src="../assets/overall_process.png"/>
+!(/assets/overall_process.png);
+
+<h5><strong>First step: Require code</strong></h5>
+<p>&nbsp;&nbsp;The third party opens the following link: </p>
+<blockquote>https://open.weixin.qq.com/connect/qrconnect?appid=APPID&redirect_uri=REDIRECT_URI&response_type=code&scope=SCOPE&state=STATE#wechat_redirect</blockquote>
+
+<p>If there is a warning showing you cannot get the access, please check whether the parameters are correct. For example, the <em>redirect_uri</em> is different from the one resigstered or the <em>scope</em> is not snsapi_login.</p>
+<p><strong>Parameters</strong></p>
+<table>
+	<tr>
+		<th>Parameter</th>
+		<th>If Necessary</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>appid</td>
+		<td>Yes</td>
+		<td>The only application identification</td>
+	</tr>
+	<tr>
+		<td>redirect_uri</td>
+		<td>Yes</td>
+		<td>Please process the link with urlEncode</td>
+	</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
