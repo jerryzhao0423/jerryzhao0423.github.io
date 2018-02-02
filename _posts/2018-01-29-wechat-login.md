@@ -24,31 +24,61 @@ categories: others
 </ul>
 
 <p>&nbsp;&nbsp;Here is the tiem sequence diagram</p>
-!(/assets/overall_process.png);
+![alternate text](/assets/overall_process.png);
 
 <h5><strong>First step: Require code</strong></h5>
 <p>&nbsp;&nbsp;The third party opens the following link: </p>
-<blockquote>https://open.weixin.qq.com/connect/qrconnect?appid=APPID&redirect_uri=REDIRECT_URI&response_type=code&scope=SCOPE&state=STATE#wechat_redirect</blockquote>
+```markdown
+https://open.weixin.qq.com/connect/qrconnect?appid=APPID&redirect_uri=REDIRECT_URI&response_type=code&scope=SCOPE&state=STATE
+#wechat_redirect</blockquote>
+```
 
 <p>If there is a warning showing you cannot get the access, please check whether the parameters are correct. For example, the <em>redirect_uri</em> is different from the one resigstered or the <em>scope</em> is not snsapi_login.</p>
-<p><strong>Parameters</strong></p>
+<h5>Parameters</h5>
 <table>
 	<tr>
-		<th>Parameter</th>
-		<th>If Necessary</th>
-		<th>Description</th>
+		<th>&nbsp;&nbsp;Parameter&nbsp;&nbsp;</th>
+		<th>&nbsp;&nbsp;If Necessary&nbsp;&nbsp;</th>
+		<th>&nbsp;&nbsp;Description&nbsp;&nbsp;</th>
 	</tr>
 	<tr>
 		<td>appid</td>
 		<td>Yes</td>
-		<td>The only application identification</td>
+		<td>The only application identification.</td>
 	</tr>
 	<tr>
 		<td>redirect_uri</td>
 		<td>Yes</td>
-		<td>Please process the link with urlEncode</td>
+		<td>Please process the link with urlEncode.</td>
+	</tr>
+	<tr>
+		<td>response_type</td>
+		<td>Yes</td>
+		<td>'=code' here.</td>
+	</tr>
+	<tr>
+		<td>scope</td>
+		<td>Yes</td>
+		<td>The application authorization scope. '=snsapi_login' here.</td>
+	</tr>
+	<tr>
+		<td>state</td>
+		<td>No</td>
+		<td>Keep the state of require and callback, return after the authorization.<br/>
+		Can prevent the fake csrf attack. Not necessary but strongly suggested.</td>
 	</tr>
 </table>
+
+<h5>Results</h5>
+<p>After getting authorization from the user, it will redirect to the redirect_uri, along with the code and state parameters.</p>
+```markdown
+redirect_uri?code=CODE&state=STATE
+```
+<p>If the user refuse to authorize, it will redirect to the redirect_uri as well, but the code parameter will not be attached.</p>
+```markdown
+redirect_uri?state=STATE
+```
+
 
 
 
