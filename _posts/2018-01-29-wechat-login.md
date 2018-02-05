@@ -24,22 +24,21 @@ categories: others
 </ul>
 
 <p>&nbsp;&nbsp;Here is the tiem sequence diagram</p>
-![alternate text](/assets/overall_process.png);
+![alternate text](../assets/overall_process.png);
 
 <h5><strong>First step: Require code</strong></h5>
 <p>&nbsp;&nbsp;The third party opens the following link: </p>
 ```markdown
-https://open.weixin.qq.com/connect/qrconnect?appid=APPID&redirect_uri=REDIRECT_URI&response_type=code&scope=SCOPE&state=STATE
-#wechat_redirect</blockquote>
+https://open.weixin.qq.com/connect/qrconnect?appid=APPID&redirect_uri=REDIRECT_URI&response_type=code&scope=SCOPE&state=STATE#wechat_redirect
 ```
 
 <p>If there is a warning showing you cannot get the access, please check whether the parameters are correct. For example, the <em>redirect_uri</em> is different from the one resigstered or the <em>scope</em> is not snsapi_login.</p>
-<h5>Parameters</h5>
+<h5><strong>Parameters</strong></h5>
 <table>
 	<tr>
-		<th>&nbsp;&nbsp;Parameter&nbsp;&nbsp;</th>
-		<th>&nbsp;&nbsp;If Necessary&nbsp;&nbsp;</th>
-		<th>&nbsp;&nbsp;Description&nbsp;&nbsp;</th>
+		<td>Parameter&nbsp;&nbsp;</td>
+		<td>If Necessary&nbsp;&nbsp;</td>
+		<td>Description&nbsp;&nbsp;</td>
 	</tr>
 	<tr>
 		<td>appid</td>
@@ -69,7 +68,7 @@ https://open.weixin.qq.com/connect/qrconnect?appid=APPID&redirect_uri=REDIRECT_U
 	</tr>
 </table>
 
-<h5>Results</h5>
+<h5><strong>Results</strong></h5>
 <p>After getting authorization from the user, it will redirect to the redirect_uri, along with the code and state parameters.</p>
 ```markdown
 redirect_uri?code=CODE&state=STATE
