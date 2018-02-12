@@ -5,7 +5,7 @@ date:   2018-01-29 23:30:00
 categories: others
 ---
 
-<h3><strong>WeChat Login</strong></h3>
+<h2><strong>WeChat Login</strong></h3>
 
 <p>&nbsp;&nbsp;Recently, I have been learning about how to realize WeChat login function through React.js. According to the document on <a href="https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1419316505&token=&lang=zh_CN">"https://open.weixin.qq.com/"</a>, the basic process is as following:</p>
 
@@ -24,9 +24,9 @@ categories: others
 </ul>
 
 <p>&nbsp;&nbsp;Here is the tiem sequence diagram</p>
-![alternate text](../assets/overall_process.png);
+<img src="https://res.wx.qq.com/open/zh_CN/htmledition/res/img/pic/app-wxlogin/12168b9.png">
 
-<h5><strong>First step: Require code</strong></h5>
+<h5><strong>Step One: Require code</strong></h5>
 <p>&nbsp;&nbsp;The third party opens the following link: </p>
 ```markdown
 https://open.weixin.qq.com/connect/qrconnect?appid=APPID&redirect_uri=REDIRECT_URI&response_type=code&scope=SCOPE&state=STATE#wechat_redirect
@@ -77,6 +77,58 @@ redirect_uri?code=CODE&state=STATE
 ```markdown
 redirect_uri?state=STATE
 ```
+
+<h5><strong>Step Two: Require access_token using code</strong></h5>
+<p>According to the redirect_uri which attached with code and state, we can get the parameters we need. Then we can get the access_token.</p>
+```markdown
+https://api.weixin.qq.com/sns/oauth2/access_token?appid=APPID&secret=SECRET&code=CODE&grant_type=authorization_code
+```
+<h5><strong>Parameters</strong></h5>
+<table>
+	<tr>
+		<td>Parameter&nbsp;&nbsp;</td>
+		<td>If Necessary&nbsp;&nbsp;</td>
+		<td>Description&nbsp;&nbsp;</td>
+	</tr>
+	<tr>
+		<td>appid</td>
+		<td>Yes</td>
+		<td>The only application identification.</td>
+	</tr>
+	<tr>
+		<td>secrect</td>
+		<td>Yes</td>
+		<td>The application key-AppSecrect.</td>
+	</tr>
+	<tr>
+		<td>code</td>
+		<td>Yes</td>
+		<td>The one got from the first step.</td>
+	</tr>
+	<tr>
+		<td>grant_type</td>
+		<td>Yes</td>
+		<td>'=authorization_code' here.</td>
+	</tr>
+</table>
+
+<h5><strong>Results</strong></h5>
+<p>Correct Results</p>
+```markdown
+{ 
+"access_token":"ACCESS_TOKEN", 
+"expires_in":7200, 
+"refresh_token":"REFRESH_TOKEN",
+"openid":"OPENID", 
+"scope":"SCOPE",
+"unionid": "o6_bmasdasdsad6_2sgVt7hMZOPfL"
+}
+```
+<p>Results with error</p>
+```mardown
+{"errcode":40029,"errmsg":"invalid code"}
+```
+
 
 
 
