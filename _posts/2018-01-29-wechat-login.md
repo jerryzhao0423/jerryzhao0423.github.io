@@ -5,7 +5,7 @@ date:   2018-01-29 23:30:00
 categories: others
 ---
 
-<h2><strong>WeChat Login</strong></h3>
+<h2><strong>WeChat Login</strong></h2>
 
 <p>&nbsp;&nbsp;Recently, I have been learning about how to realize WeChat login function through React.js. According to the document on <a href="https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1419316505&token=&lang=zh_CN">"https://open.weixin.qq.com/"</a>, the basic process is as following:</p>
 
@@ -128,6 +128,16 @@ https://api.weixin.qq.com/sns/oauth2/access_token?appid=APPID&secret=SECRET&code
 ```mardown
 {"errcode":40029,"errmsg":"invalid code"}
 ```
+
+
+<h3>Here is an example from my project using wechat login system</h3>
+First, we created a link to the QRcode webpage.
+{% highlight javascript %}
+	const re_uri = encodeURIComponent(redirect_uri);
+    const app_id = appID;
+    const weChat_url = `https://open.weixin.qq.com/connect/qrconnect?appid=${app_id}&redirect_uri=${re_uri}&response_type=code&scope=snsapi_login#wechat_redirect`
+    <a href={weChat_url}><i className="fa fa-weixin" aria-hidden='true'/><a>
+{% endhighlight %}
 
 
 
