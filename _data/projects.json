@@ -1,5 +1,26 @@
 [
 	{
+		"name": "Invite code Api using Django",
+		"image": "#",
+		"url": "https://github.com/jerryzhao0423/invite-code-api",
+		"date": "Jan 2018",
+		"tags": ["Python","Django"]
+	},
+	{
+		"name": "Music list app using Django",
+		"image": "#",
+		"url": "https://github.com/jerryzhao0423/music-list-app",
+		"date": "Jan 2018",
+		"tags": ["Python","Django"]
+	},
+	{
+		"name": "A menu example using React",
+		"image": "#",
+		"url": "https://github.com/jerryzhao0423/react-redux-example-menu",
+		"date": "Oct 2017",
+		"tags": ["Javascript","React","Redux"]
+	},
+	{
 		"name": "Analysis of ubiquitous caching for adaptive video streaming over named data network",
 		"image": "#",
 		"url": "#",
