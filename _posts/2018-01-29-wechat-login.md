@@ -138,10 +138,50 @@ const app_id = appID;
 const weChat_url = `https://open.weixin.qq.com/connect/qrconnect?appid=${app_id}&redirect_uri=${re_uri}&response_type=code&scope=snsapi_login#wechat_redirect`
 <a href={weChat_url}><i className="fa fa-weixin" aria-hidden='true'/><a>
 {% endhighlight %}
+From this link, users can jump to the outlink, scan the QRcode and give the permissions of wechat login.
 Then, we need to create a new router in <em>routes.js</em>.
 {% highlight javascript %}
 <Route path="/wxLogin/" components={wxLogin}/>
 {% endhighlight %}
+And, the core part is the new component, wxLogin. This can be an empty page, which means rendering nothing, but we need to finish multiple jobs on this page, like getting the code has been returned, fetching access_token, and sending the access_token to the server.
+The first step is getting the code. If the code exists, we will do the <em>fetchToken</em> function. While if the code doesn't exists, we will jump to a 404 page.
+{% highlight javascript %}
+componentWillMount(){
+    const query = window.location.search;
+    const paras = query.substr(1).split('&');
+    const code = paras[0].split('=')[1];
+    if (code) {
+        this._fetchToken(code)
+    }else {
+        this.props.router.push('*')
+    }
+}
+{% endhighlight %}
+The next thing is fetching access_token.
+{% highlight javascript %}
+_fetchToken(code){
+    const app_id = AppId;
+    const app_secret = AppSecrect;
+    const apiUrl = `https://api.weixin.qq.com/sns/oauth2/access_token?appid=${app_id}&secret=${app_secret}&code=${code}&grant_type=authorization_code`;
+    //console.log(apiUrl)
+    return fetch(apiUrl,{
+        headers: {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+        },
+        method: 'GET',
+    })
+        .then((res)=>res.json()
+        .then((data)=> {
+            console.log(data)
+            this._responseWechat(data.access_token, data.openid)
+        }))
+        .catch((err)=>{
+            throw err
+        })
+}
+{% endhighlight %}
+
 
 
 
