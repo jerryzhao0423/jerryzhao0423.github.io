@@ -181,8 +181,57 @@ _fetchToken(code){
         })
 }
 {% endhighlight %}
-
-
+After acquiring the access_token and openid, we will have access to the basic information through the wechat api, including nickname, gender, location, and etc. 
+```markdown
+https://api.weixin.qq.com/sns/userinfo?access_token=ACCESS_TOKEN&openid=OPENID
+```
+However, in my project, I need to send the access_token and openid to the backend to finish the authorization job. So the <em>this._responseWechat</em> looks like
+{% highlight javascript %}
+_responseWechat(token, openID){
+    this.props.socialLogin(
+        "wechat",
+        {
+            access_token:token,
+            openid:openID
+        },
+        ()=>{this.props.router.push('/')}
+    )
+}
+{% endhighlight %}
+And the socialLogin action looks like
+{% highlight javascript %}
+export function socialLogin(type,token,onSuccess) {  
+    return dispatch => {
+        dispatch(showSpinner())
+        const fullUrl = API_ROOT + 'oauth/' + type + '/';
+        return fetch(fullUrl, {
+            headers: {
+                "Accept": "application/json",
+                "Content-Type": "application/json",
+                'X-CSRFToken': get_cookie('csrftoken')
+            },
+            method: "post",
+            credentials: 'include',
+            body: JSON.stringify(token)
+        })
+            .then(console.log(JSON.stringify(token)))
+            .then(parseResponse)
+            .then((user) => {
+                dispatch(gotAuthedUser(user.user))
+                dispatch(hideSpinner())
+                if(onSuccess) {
+                    onSuccess()
+                }
+            })
+            .catch((errors) => {
+                dispatch(hideSpinner())
+                throw errors
+            });
+    };
+}
+{% endhighlight %}
+<br/>
+<strong>From the operations above, we can basically accomplish the weChat login function. Because I didn't find many documents that can help with the weChat login besides the official document, I wrote this and wish it can help whoever needs a little hint about the weChat login system.</strong>
 
 
 
