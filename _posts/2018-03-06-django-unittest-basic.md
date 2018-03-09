@@ -30,11 +30,13 @@ Some programmers follow a discipline called “test-driven development".More oft
 Sometimes it’s difficult to figure out where to get started with writing tests. If you have written several thousand lines of Python, choosing something to test might not be easy. In such a case, it’s fruitful to write your first test the next time you make a change, either when you add a new feature or fix a bug.<br/>
 
 <h3>Writing our first test</h3>
-<strong><em>We identify a bug</em></strong><br/>
-<strong><em>Create a test to expose the bug</em></strong><br/>
-<strong><em>Running tests/em></strong><br/>
-<strong><em>Fixing the bug</em></strong><br/>
-<strong><em>More comprehensive tests</em></strong><br/>
+<strong><em>
+	We identify a bug<br/>
+	Create a test to expose the bug<br/>
+	Running tests<br/>
+	Fixing the bug<br/>
+	More comprehensive tests
+</em></strong>
 
 
 
