@@ -4,7 +4,10 @@ author: Jerry Zhao
 github: https://github.com/jerryzhao0423
 about: M.Eng - Queen's University
 
-baseurl: "https://jerryzhao0423.github.io"
+baseurl: ""
+share:
+    twitter_username: "CupidZhao"
+google_analytics: "UA-145128550-1"
 
 # Where things are
 source              : .
@@ -50,7 +53,6 @@ incremental         : false
 detach              : false
 port                : 4000
 host                : 127.0.0.1
-baseurl             : "" # does not include hostname
 show_dir_listing    : false
 
 # Outputting
