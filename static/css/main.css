@@ -1,7 +1,9 @@
 .container.main{
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 .banner{
     height: 100vh;
@@ -9,6 +11,9 @@
     background-size: cover;
 }
 .bannerContainer{
+    text-align: center;
+    max-width: 1440px;
+    margin: 0 auto;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -17,14 +22,13 @@
     z-index: 2;
     height: 100%;
     color: #ffffff;
-    font-family: 'Raleway', sans-serif;
 }
 .myName{
     font-size: 63px;
     font-weight: 500;
     padding: 20px;
     border-bottom: 1px solid rgba(255,255,255,0.5);
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
 }
 .welcome{
     font-size: 50px;
@@ -41,6 +45,47 @@
     background: #17429E;
     opacity: 0.75;
     z-index: 1;
+}
+.profile{
+    margin: 50px auto;
+}
+.sectionTitle{
+    font-size: 52px;
+    color: #17429E;
+    margin-bottom: 10px;
+}
+.sectionSubTitle{
+    font-size: 24px;
+    font-weight: 500;
+    color: #333333;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+.detailSection{
+    text-align: left;
+}
+.detailSection .subSectionTitle{
+    font-size: 28px;
+    font-weight: bold;
+    color: #17429E;
+    margin-bottom: 20px;
+}
+.detailSection .subSectionLabel{
+    color: #333333;
+    font-weight: bold;
+    font-size: 18px;
+}
+.detailSection .subSectionValue{
+    font-size: 18px;
+    color: #555555;
+    margin-bottom: 5px;
+}
+.profileAvatar{
+    width: 80%;
+    border-radius: 50%;
+    border: 10px solid #e3e3e3;
 }
 .header-panel.shadow-z-2 {
     background-color: #0a78b9;
@@ -215,51 +260,4 @@ footer {
 }
 .pager li.active a {
     background: rgba(89, 148, 129, 0.3);
-}
-/** Search input **/
-.searchcontrol {
-    margin-top: 35px;
-    margin-bottom: 0;
-}
-.searchcontrol input[type=text]{
-    color:#fff;
-}
-.searchcontrol input[type=text]:focus{
-    outline: none;
-    border: none;
-    box-shadow: none;
-}
-
-/** Search result dropdown **/
-.search__results {
-    display: block;
-    background: #fff;
-    list-style: none;
-    padding: 0;
-    transition: 0.2s ease;
-    position: absolute;
-    width: 100%;
-    -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
-    box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
-    border-radius: 2px;
-    border: 0;
-    z-index: 999;
-}
-.search__results.is-hidden {
-    opacity: 0;
-    transform: translateY(-1vh);
-    display: none;
-}
-.search__results > li {
-    border-top: 1px solid #f0f0f0;
-    padding: 10px 0;
-}
-.search__results > li > a {
-    padding: 10px;
-}
-.search__result-date {
-    font-size: 12px;
-    color: #BBB;
-    position: absolute;
-    right: 12px;
 }
