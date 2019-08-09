@@ -1,3 +1,9 @@
+*{
+    transition: 0.3s all ease-in-out;
+}
+.white{
+    color: #ffffff !important;
+}
 .container.main{
     width: 100%;
     margin: 0 auto;
@@ -47,7 +53,8 @@
     z-index: 1;
 }
 .profile{
-    margin: 50px auto;
+    margin: 0 auto;
+    padding: 50px 0;
 }
 .sectionTitle{
     font-size: 52px;
@@ -60,7 +67,7 @@
     color: #333333;
     text-transform: uppercase;
     border-bottom: 1px solid #e3e3e3;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     margin-bottom: 50px;
 }
 .detailSection{
@@ -87,71 +94,53 @@
     border-radius: 50%;
     border: 10px solid #e3e3e3;
 }
-.header-panel.shadow-z-2 {
-    background-color: #0a78b9;
-    padding: 50px 0 15px 0;
-    width: 100%;
-}
-.full{ font-size: 16px; }
-.logo-img {
-    width: 56px;
-    height: 56px;
-    border-radius: 60px;
+
+.contacts{
     margin: 0 auto;
+    padding: 50px 0;
+    background-color: #434242;
 }
-.logo-turner {
-    font-size: 18px;
-    vertical-align: middle;
-    text-align: center;
-    margin-top: 10px;
-    letter-spacing: 2px;
+
+.contacts .sectionSubTitle{
+    opacity: 0.5;
 }
-.row-content{
-    vertical-align: top;
-}
-.row-picture {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 10px;
-}
-.row-details {
-    display: inline-block;
-    vertical-align: middle;
-    color: #fff;
-}
-p.info {
-    color: #fff;
-}
-p.info a {
-    color: #fff;
-    text-decoration: underline;
-}
-.full ul,.full ol {
-    margin-left: 15px;
-}
-.full img{
+
+.socialLinks{
     display: block;
-    max-width: 100%;
-    height: auto;
+    color: #ffffff;
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 40px;
 }
-.social-icons {
-    margin: 20px 0 0;
+.socialLinks:hover{
+    color: rgba(255, 255, 255, 0.63);
+    text-decoration: none;
+    transform: translateX(10px);
+}
+.socialLinks:hover .icon{
+    transform: rotateY(360deg);
+    color: #333333;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.socialLinks:focus{
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+ }
+.address{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
 }
 .icon {
     background: rgba(255, 255, 255, 0.63);
-    border-radius: 100%;
     text-align: center;
-    line-height: 20px;
+    color: #ffffff;
     font-size: 20px;
-    color: #0a78b9;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     display: inline-block;
-}
-.icon:hover {
-    color: rgba(255, 255, 255, 0.63);
-    background: #0a78b9;
+    border-radius: 6px;
 }
 .menu ul li {
     list-style: none;
