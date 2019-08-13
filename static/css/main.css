@@ -1,5 +1,6 @@
 *{
     transition: 0.3s all ease-in-out;
+    scroll-behavior: smooth;
 }
 .white{
     color: #ffffff !important;
@@ -29,6 +30,15 @@
     height: 100%;
     color: #ffffff;
 }
+.banner .down-arrow{
+    position: absolute;
+    bottom: 40px;
+    left: calc(50% - 15px);
+    z-index: 2;
+}
+.banner .down-arrow img{
+    width: 30px;
+}
 .myName{
     font-size: 63px;
     font-weight: 500;
@@ -52,19 +62,24 @@
     opacity: 0.75;
     z-index: 1;
 }
-.profile{
+.profile, .experience, .contacts{
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 80px 0;
+}
+.profile{
+    color: #333333;
+}
+.profile .sectionTitle {
+    color: #17429E;
 }
 .sectionTitle{
     font-size: 52px;
-    color: #17429E;
+    font-weight: 600;
     margin-bottom: 10px;
 }
 .sectionSubTitle{
     font-size: 24px;
     font-weight: 500;
-    color: #333333;
     text-transform: uppercase;
     border-bottom: 1px solid #e3e3e3;
     padding-bottom: 30px;
@@ -94,10 +109,37 @@
     border-radius: 50%;
     border: 10px solid #e3e3e3;
 }
+.experience{
+    background-color: #B8DDE1;
+    color: #006F62;
+}
+.experience .subSectionTitle{
+    font-size: 28px;
+    font-weight: 700;
+    margin: 30px 0 20px;
+}
+.educationRow{
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(100,100,100,0.5);
+    font-size: 24px;
+}
+.educationRow:last-child{
+    border-bottom: none;
+}
+.educationSection{
+    text-align: right;
+}
+.educationRow .locationIcon {
+    display: inline-block;
+    margin-right: 10px;
+}
+.educationRow .school{
+    font-weight: bold;
+}
 
 .contacts{
-    margin: 0 auto;
-    padding: 50px 0;
     background-color: #434242;
 }
 
@@ -118,7 +160,6 @@
     transform: translateX(10px);
 }
 .socialLinks:hover .icon{
-    transform: rotateY(360deg);
     color: #333333;
     background-color: rgba(255, 255, 255, 0.3);
 }
