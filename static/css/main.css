@@ -271,11 +271,7 @@ span.tags{ margin: 0 2px;cursor: pointer;display: inline-block;}
 .menu .list-group-item-heading, .menu .list-group-item-text{
     color:#fff!important;
 }
-@media (max-width: 768px) {
-    #portfolio-filter {
-        margin-top: 0px;
-    }
-}
+
 footer {
     border-top: 1px solid #C5C0C0;
     width: 100%;
@@ -290,4 +286,97 @@ footer {
 }
 .pager li.active a {
     background: rgba(89, 148, 129, 0.3);
+}
+
+@media (max-width: 768px) {
+    .banner .down-arrow{
+        bottom: 20px;
+    }
+    .myName{
+        font-size: 30px;
+    }
+    .welcome{
+        font-size: 24px;
+    }
+    .banner .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #17429E;
+        opacity: 0.75;
+        z-index: 1;
+    }
+    .profile, .experience, .contacts{
+        margin: 0 auto;
+        padding: 40px 10px;
+    }
+    .sectionTitle{
+        font-size: 30px;
+    }
+    .sectionSubTitle{
+        font-size: 20px;
+        padding-bottom: 15px;
+        margin-bottom: 10px;
+    }
+    .detailSection{
+        text-align: left;
+        margin: 20px 0;
+    }
+    .detailSection .subSectionTitle{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .detailSection .subSectionLabel{
+        font-size: 16px;
+    }
+    .detailSection .subSectionValue{
+        font-size: 16px;
+    }
+    .profile .detailSection {
+        text-align: center;
+    }
+    .profileAvatar{
+        width: 50%;
+    }
+    .experience .subSectionTitle{
+        font-size: 20px;
+        font-weight: 700;
+        margin: 30px 0 0;
+    }
+    .educationRow{
+        width: 100%;
+        margin: auto;
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(100,100,100,0.5);
+        font-size: 16px;
+    }
+    .educationRow:last-child{
+        border-bottom: none;
+    }
+    .educationSection, .educationRow .detailSection{
+        margin: 0;
+    }
+
+    .socialLinks{
+        display: block;
+        color: #ffffff;
+        margin: 10px 0;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .address{
+        margin-left: 0;
+        max-width: calc(100% - 30px);
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .icon {
+        font-size: 15px;
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        border-radius: 3px;
+    }
 }
