@@ -62,7 +62,7 @@
     opacity: 0.75;
     z-index: 1;
 }
-.profile, .experience, .contacts{
+.profile, .experience, .contacts, .skills{
     margin: 0 auto;
     padding: 80px 0;
 }
@@ -113,11 +113,16 @@
     background-color: #B8DDE1;
     color: #006F62;
 }
+.skills{
+    background-color: #17429E;
+    color: #ffffff;
+}
 .experience .subSectionTitle{
     font-size: 28px;
     font-weight: 700;
     margin: 30px 0 20px;
 }
+
 .educationRow{
     width: 80%;
     margin: auto;
