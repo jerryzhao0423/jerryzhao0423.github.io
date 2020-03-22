@@ -1,0 +1,51 @@
+.Banner {
+  height: 100vh;
+  background: url("/static/img/bannerBg.JPG") no-repeat center bottom fixed;
+  background-size: cover;
+
+  .BannerContainer {
+    text-align: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    height: 100%;
+    color: #ffffff;
+  }
+  .myName{
+    font-size: 63px;
+    font-weight: 500;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    letter-spacing: 1px;
+  }
+  .welcome{
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .down-arrow {
+    position: absolute;
+    bottom: 40px;
+    left: calc(50% - 15px);
+    z-index: 2;
+    img {
+      width: 30px;
+    }
+  }
+  .BannerOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #17429E;
+    opacity: 0.75;
+    z-index: 1;
+  }
+}
