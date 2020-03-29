@@ -1,0 +1,59 @@
+[
+	{
+		"name": "Invite code interface",
+		"image": "invitecode.png",
+		"url": "https://github.com/jerryzhao0423/referral-system",
+		"date": "Feb 2018",
+		"tags": ["React","Redux"]
+	},
+	{
+		"name": "Invite code Api using Django",
+		"image": "#",
+		"url": "https://github.com/jerryzhao0423/invite-code-api",
+		"date": "Jan 2018",
+		"tags": ["Python","Django"]
+	},
+	{
+		"name": "Music list app using Django",
+		"image": "musicapp.png",
+		"url": "https://github.com/jerryzhao0423/music-list-app",
+		"date": "Jan 2018",
+		"tags": ["Python","Django"]
+	},
+	{
+		"name": "A menu example using React",
+		"image": "#",
+		"url": "https://github.com/jerryzhao0423/react-redux-example-menu",
+		"date": "Oct 2017",
+		"tags": ["Javascript","React","Redux"]
+	},
+	{
+		"name": "Analysis of ubiquitous caching for adaptive video streaming over named data network",
+		"image": "#",
+		"url": "#",
+		"date": "May 2016",
+		"tags": ["C++","MATLAB"]
+	},
+	{
+		"name": "A 12 bit 100MS/s sample and hold circuit for pipeline ADC",
+		"image": "pipeline.gif",
+		"url": "http://jerryzhao0423.github.io/static/projects/sh_circuit.pdf",
+		"date": "Oct 2016",
+		"tags": ["Cadence","MATLAB"]
+	},
+	{
+		"name": "An intelligent vehicle based on FPGA",
+		"image": "intelligent_vehicle.jpg",
+		"url": "#",
+		"date": "Sep 2014",
+		"tags": ["VHDL"]
+	},
+	{
+		"name": "A model to choose the best college coaches of all time",
+		"image": "NCAA_logo.png",
+		"url": "http://jerryzhao0423.github.io/static/projects/best_coach.pdf",
+		"date": "Jan 2014",
+		"tags": ["Python","MATLAB"]
+	}
+
+]

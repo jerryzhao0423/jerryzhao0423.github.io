@@ -1,10 +1,11 @@
 import * as React from "react";
 import classNames from "classnames";
+import { Element } from "react-scroll";
 import "./Profile.scss";
 
 export const Profile = ({ className }) => {
   return (
-    <div className="profile" id="profile">
+    <Element className="profile" id="profile" name="profile">
       <div className="maxWidthContainer">
         <div className="sectionTitle">Profile</div>
         <div className="sectionSubTitle">Some facts about me</div>
@@ -35,6 +36,6 @@ export const Profile = ({ className }) => {
           </div>
         </div>
       </div>
-    </div>
+    </Element>
   );
 };
