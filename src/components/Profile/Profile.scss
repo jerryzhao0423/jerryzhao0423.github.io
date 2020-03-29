@@ -1,32 +1,54 @@
-.profile{
+.profile {
   margin: 0 auto;
   padding: 80px 0;
   color: #333333;
   .sectionTitle {
-    color: #17429E;
+    color: #17429e;
   }
-  .detailSection{
+  .detailSection {
     text-align: left;
-    .subSectionTitle{
+    .subSectionTitle {
       font-size: 28px;
       font-weight: bold;
-      color: #17429E;
+      color: #17429e;
       margin-bottom: 20px;
     }
-    .subSectionLabel{
+    .subSectionLabel {
       color: #333333;
       font-weight: bold;
       font-size: 18px;
     }
-    .subSectionValue{
+    .subSectionValue {
       font-size: 18px;
       color: #555555;
       margin-bottom: 5px;
     }
   }
-  .profileAvatar{
+  .profileAvatar {
     width: 80%;
     border-radius: 50%;
     border: 10px solid #e3e3e3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile {
+    margin: 0 auto;
+    padding: 40px 10px;
+    .detailSection {
+      text-align: center;
+      margin: 20px 0;
+      .subSectionTitle {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+      .subSectionLabel,
+      .subSectionValue {
+        font-size: 16px;
+      }
+    }
+    .profileAvatar {
+      width: 50%;
+    }
   }
 }

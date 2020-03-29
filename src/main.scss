@@ -56,4 +56,15 @@ a {
   .isMobileOnly {
     display: block !important;
   }
+  .maxWidthContainer {
+    padding: 0 10px;
+  }
+  .sectionTitle{
+    font-size: 30px;
+  }
+  .sectionSubTitle{
+    font-size: 18px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+  }
 }

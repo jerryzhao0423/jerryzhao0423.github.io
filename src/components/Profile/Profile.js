@@ -10,7 +10,7 @@ export const Profile = ({ className }) => {
         <div className="sectionTitle">Profile</div>
         <div className="sectionSubTitle">Some facts about me</div>
         <div className="row">
-          <div className="col-md-4 detailSection">
+          <div className="col-sm-4 detailSection">
             <div className="subSectionTitle">Details:</div>
             <div className="subSectionLabel">Name:</div>
             <div className="subSectionValue">Zhejian(Jerry) Zhao</div>
@@ -21,10 +21,10 @@ export const Profile = ({ className }) => {
             <div className="subSectionLabel">Job Position</div>
             <div className="subSectionValue">Web Developer/Front End Developer</div>
           </div>
-          <div className="col-md-4">
+          <div className="col-sm-4">
             <img src="/static/img/avatar.jpeg" alt="jerryzhao" className="profileAvatar" />
           </div>
-          <div className="col-md-4 detailSection">
+          <div className="col-sm-4 detailSection">
             <div className="subSectionTitle">About Me:</div>
             <div className="subSectionValue">
               I finished my undergraduate at Tianjin University in 2015. And after that, I came to Canada and completed my master degree as

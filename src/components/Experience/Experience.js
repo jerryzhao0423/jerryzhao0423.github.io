@@ -13,11 +13,11 @@ export const Experience = ({ className }) => {
         <div className="subSectionTitle">Education</div>
         {edData.map(item => (
           <div className="row educationRow">
-            <div className="col-xs-12 col-md-5 educationSection">
+            <div className="col-xs-12 col-sm-5 educationSection">
               <div className="school">{item.school}</div>
               <div className="year">{item.year}</div>
             </div>
-            <div className="col-xs-12 col-md-7 detailSection">
+            <div className="col-xs-12 col-sm-7 detailSection">
               <div>{item.degree}</div>
               <div>{item.program}</div>
               <div>
@@ -33,11 +33,11 @@ export const Experience = ({ className }) => {
         <div className="subSectionTitle">Career</div>
         {caData.map(item => (
           <div className="row educationRow">
-            <div className="col-md-5 educationSection">
+            <div className="col-sm-5 educationSection">
               <div className="school">{item.company}</div>
               <div className="year">{item.year}</div>
             </div>
-            <div className="col-md-7 detailSection">
+            <div className="col-sm-7 detailSection">
               <div>{item.title}</div>
               <div>
                 <span className="locationIcon">
