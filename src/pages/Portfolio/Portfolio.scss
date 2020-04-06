@@ -1,60 +1,72 @@
 .Portfolio {
   background-color: rgb(241, 241, 241);
-  display: flex;
-  height: 100vh;
-  &.menuOpen{
-    .Portfolio_Nav{
+  &.menuOpen {
+    .Portfolio_Nav {
       width: 15%;
+      a{
+        opacity: 1;
+        transition: 0.1s opacity ease-in-out;
+        transition-delay: 0.2s;
+      }
     }
-    .Portfolio_RightContainer{
+    .Portfolio_RightContainer {
+      margin-left: 15%;
       width: 85%;
     }
   }
-  .Portfolio_MenuBtn{
-    position: absolute;
+  .Portfolio_MenuBtn {
+    position: fixed;
     left: 40px;
     top: 40px;
-    .Portfolio_OpenBtn{
+    z-index: 1;
+    .Portfolio_OpenBtn {
       cursor: pointer;
-      &:hover{
-        >div{
+      &:hover {
+        > div {
           transform: scaleY(1.25);
         }
       }
-      >div{
+      > div {
         display: inline-block;
         width: 3px;
         height: 40px;
         background: #333333;
         margin-right: 9px;
         transition: 0.3s all ease-in-out;
-        &:nth-child(2n){
+        &:nth-child(2n) {
           transition-delay: 0.1s;
         }
-        &:nth-child(3n){
+        &:nth-child(3n) {
           transition-delay: 0.2s;
         }
-        &:nth-child(4n){
+        &:nth-child(4n) {
           transition-delay: 0.3s;
         }
       }
     }
   }
   .Portfolio_Nav {
+    position: fixed;
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 0;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
     border-right: 1px solid rgb(219, 219, 219);
     transition: 0.3s all ease-in-out;
+    a {
+      cursor: pointer;
+      color: #333333;
+      margin: 5px 0;
+      text-decoration: none;
+      opacity: 0;
+    }
   }
   .Portfolio_RightContainer {
     display: flex;
     width: 100%;
-    height: 100vh;
-    overflow-y: auto;
     transition: 0.3s all ease-in-out;
     .Portfolio_RightSpace {
       width: 20%;

@@ -1,5 +1,6 @@
 import React from "react";
 import cx from "classnames";
+import * as Scroll from 'react-scroll';
 import "./Portfolio.scss";
 import InfluencerImg from "../../static/portfolio/Influencer.png";
 import HububImg from "../../static/portfolio/Hubub.png";
@@ -20,7 +21,7 @@ export const Portfolio = () => {
   return (
     <div className={cx("Portfolio", { menuOpen })}>
       <div className="Portfolio_MenuBtn">
-        <div className="Portfolio_OpenBtn" onClick={()=>setMenuOpen(!menuOpen)}>
+        <div className="Portfolio_OpenBtn" onClick={() => setMenuOpen(!menuOpen)}>
           <div />
           <div />
           <div />
@@ -28,15 +29,15 @@ export const Portfolio = () => {
         </div>
       </div>
       <div className="Portfolio_Nav">
-        <div>Web Apps</div>
-        <div>Landing Pages</div>
-        <div>Modern Websites</div>
-        <div>E-Commerce</div>
+        <Scroll.Link to="webApps" smooth>Web Apps</Scroll.Link>
+        <Scroll.Link to="landing" smooth>Landing Pages</Scroll.Link>
+        <Scroll.Link to="modern" smooth>Modern Websites</Scroll.Link>
+        <Scroll.Link to="ecommerce" smooth>E-Commerce</Scroll.Link>
       </div>
       <div className="Portfolio_RightContainer">
         <div className="Portfolio_RightSpace" />
         <div className="Portfolio_ProjectContainer">
-          <div>
+          <Scroll.Element name="webApps">
             <div className="Portfolio_Single">
               <img src={InfluencerImg} alt="" className="Portfolio_Img" />
               <div className="Portfolio_Text">Influencers Site</div>
@@ -57,9 +58,9 @@ export const Portfolio = () => {
               <img src={TeleDashImg} alt="" className="Portfolio_Img" />
               <div className="Portfolio_Text">Telephia Dashboard</div>
             </div>
-          </div>
+          </Scroll.Element>
 
-          <div>
+          <Scroll.Element name="landing">
             <div className="Portfolio_Single">
               <img src={TelephiaImg} alt="" className="Portfolio_Img" />
               <div className="Portfolio_Text">Telephia</div>
@@ -72,9 +73,9 @@ export const Portfolio = () => {
               <img src={SK2Img} alt="" className="Portfolio_Img" />
               <div className="Portfolio_Text">SK-II</div>
             </div>
-          </div>
+          </Scroll.Element>
 
-          <div>
+          <Scroll.Element name="modern">
             <div className="Portfolio_Single">
               <img src={AlignImg} alt="" className="Portfolio_Img" />
               <div className="Portfolio_Text">Align</div>
@@ -83,9 +84,9 @@ export const Portfolio = () => {
               <img src={P100Img} alt="" className="Portfolio_Img" />
               <div className="Portfolio_Text">Pinterest100</div>
             </div>
-          </div>
+          </Scroll.Element>
 
-          <div>
+          <Scroll.Element name="ecommerce">
             <div className="Portfolio_Single">
               <img src={GilletteImg} alt="" className="Portfolio_Img" />
               <div className="Portfolio_Text">Gillette</div>
@@ -98,7 +99,7 @@ export const Portfolio = () => {
               <img src={JoyImg} alt="" className="Portfolio_Img" />
               <div className="Portfolio_Text">Joy + Glee</div>
             </div>
-          </div>
+          </Scroll.Element>
         </div>
         <div className="Portfolio_RightSpace" />
       </div>
