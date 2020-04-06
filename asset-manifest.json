@@ -1,22 +1,35 @@
 {
   "files": {
-    "main.css": "/static/css/main.2a3c6413.chunk.css",
-    "main.js": "/static/js/main.e5fdd905.chunk.js",
-    "main.js.map": "/static/js/main.e5fdd905.chunk.js.map",
+    "main.css": "/static/css/main.02522e1b.chunk.css",
+    "main.js": "/static/js/main.7f240806.chunk.js",
+    "main.js.map": "/static/js/main.7f240806.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c399816e.js",
     "runtime-main.js.map": "/static/js/runtime-main.c399816e.js.map",
-    "static/js/2.4a563f8e.chunk.js": "/static/js/2.4a563f8e.chunk.js",
-    "static/js/2.4a563f8e.chunk.js.map": "/static/js/2.4a563f8e.chunk.js.map",
+    "static/js/2.2d54dd40.chunk.js": "/static/js/2.2d54dd40.chunk.js",
+    "static/js/2.2d54dd40.chunk.js.map": "/static/js/2.2d54dd40.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.33b9391936b8dd118291e1de314828d0.js": "/precache-manifest.33b9391936b8dd118291e1de314828d0.js",
+    "precache-manifest.a7f6ec66945e39320c1bef30dbe7edd4.js": "/precache-manifest.a7f6ec66945e39320c1bef30dbe7edd4.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.2a3c6413.chunk.css.map": "/static/css/main.2a3c6413.chunk.css.map",
-    "static/js/2.4a563f8e.chunk.js.LICENSE": "/static/js/2.4a563f8e.chunk.js.LICENSE"
+    "static/css/main.02522e1b.chunk.css.map": "/static/css/main.02522e1b.chunk.css.map",
+    "static/js/2.2d54dd40.chunk.js.LICENSE": "/static/js/2.2d54dd40.chunk.js.LICENSE",
+    "static/media/Align.png": "/static/media/Align.98ea6268.png",
+    "static/media/BSTool.png": "/static/media/BSTool.78538125.png",
+    "static/media/Gillette.png": "/static/media/Gillette.0e8d0285.png",
+    "static/media/Hubub.png": "/static/media/Hubub.35760891.png",
+    "static/media/Influencer.png": "/static/media/Influencer.d97fd16a.png",
+    "static/media/Joy.png": "/static/media/Joy.4b51aea2.png",
+    "static/media/NewCenter.png": "/static/media/NewCenter.45eb06dc.png",
+    "static/media/P100.png": "/static/media/P100.b8f27a06.png",
+    "static/media/Prophet.png": "/static/media/Prophet.f6969694.png",
+    "static/media/SK2.png": "/static/media/SK2.4f9f8631.png",
+    "static/media/TeleDash.png": "/static/media/TeleDash.f1cc21aa.png",
+    "static/media/Telephia.png": "/static/media/Telephia.3882a575.png",
+    "static/media/Venus.png": "/static/media/Venus.3e8c8ee3.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c399816e.js",
-    "static/js/2.4a563f8e.chunk.js",
-    "static/css/main.2a3c6413.chunk.css",
-    "static/js/main.e5fdd905.chunk.js"
+    "static/js/2.2d54dd40.chunk.js",
+    "static/css/main.02522e1b.chunk.css",
+    "static/js/main.7f240806.chunk.js"
   ]
 }
