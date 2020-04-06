@@ -117,3 +117,45 @@
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .Portfolio {
+    &.menuOpen {
+      .Portfolio_Nav {
+        width: 100%;
+        a{
+          opacity: 1;
+          transition: 0.1s opacity ease-in-out;
+          transition-delay: 0.2s;
+        }
+      }
+      .Portfolio_RightContainer {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+    .Portfolio_MenuBtn {
+      display: none;
+    }
+    .Portfolio_Nav {
+      display: none;
+    }
+    .Portfolio_RightContainer {
+      display: flex;
+      width: 100%;
+      transition: 0.3s all ease-in-out;
+      .Portfolio_RightSpace {
+        width: 10%;
+      }
+      .Portfolio_ProjectContainer {
+        width: 80%;
+        .Portfolio_Single {
+          margin: 20px 0;
+          .Portfolio_Text {
+            font-size: 24px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+}
