@@ -1,0 +1,107 @@
+.Portfolio {
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  height: 100vh;
+  &.menuOpen{
+    .Portfolio_Nav{
+      width: 15%;
+    }
+    .Portfolio_RightContainer{
+      width: 85%;
+    }
+  }
+  .Portfolio_MenuBtn{
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    .Portfolio_OpenBtn{
+      cursor: pointer;
+      &:hover{
+        >div{
+          transform: scaleY(1.25);
+        }
+      }
+      >div{
+        display: inline-block;
+        width: 3px;
+        height: 40px;
+        background: #333333;
+        margin-right: 9px;
+        transition: 0.3s all ease-in-out;
+        &:nth-child(2n){
+          transition-delay: 0.1s;
+        }
+        &:nth-child(3n){
+          transition-delay: 0.2s;
+        }
+        &:nth-child(4n){
+          transition-delay: 0.3s;
+        }
+      }
+    }
+  }
+  .Portfolio_Nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    border-right: 1px solid rgb(219, 219, 219);
+    transition: 0.3s all ease-in-out;
+  }
+  .Portfolio_RightContainer {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    transition: 0.3s all ease-in-out;
+    .Portfolio_RightSpace {
+      width: 20%;
+    }
+    .Portfolio_ProjectContainer {
+      border-left: 1px solid rgb(219, 219, 219);
+      border-right: 1px solid rgb(219, 219, 219);
+      width: 60%;
+      height: 100%;
+      .Portfolio_Single {
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        margin: 40px 0;
+        &:hover {
+          .Portfolio_Text {
+            opacity: 0;
+          }
+          .Portfolio_Img {
+            transform: scale(1.5);
+            transition: transform 10s linear;
+          }
+        }
+        .Portfolio_Img {
+          width: 100%;
+          transition: transform 1s linear;
+        }
+        .Portfolio_Text {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(234, 234, 234, 0.8);
+          text-shadow: 1px 1px 3px #333333;
+          font-size: 42px;
+          line-height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #ffffff;
+          z-index: 1;
+          transition: opacity 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}
